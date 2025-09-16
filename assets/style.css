@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +7,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
     background: #f9f9f9;
+    flex-direction: column;
 }
 
 header {
@@ -34,6 +37,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .logo {
