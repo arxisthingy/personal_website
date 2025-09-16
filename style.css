@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+#about {
+    text-align: center;
+}
+
+#portfolio {
+    text-align: center;
+    background: linear-gradient(to right, #e0e0e0, #a4a4a4);
+}
+
+#contact {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, #83bfc7, #ffffff);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;         
+    color: transparent;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    flex-direction: row;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to right, #e0e0e0, #a4a4a4);
+}
+
+section {
+    font-size: clamp(16px, 2vw, 24px);
+    padding: 2rem;
+    margin: auto;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: fit-content;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+.card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
