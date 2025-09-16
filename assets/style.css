@@ -111,6 +111,7 @@ section h2 {
 
 footer {
     text-align: center;
+    font-size: clamp(12px, 2vw, 20px);
     padding: 1rem;
     background: #222;
     color: #fff;
